@@ -15,25 +15,25 @@ Caso de Uso: Atacar Território
 - Jogador possui pelo menos 2 exércitos em seu território de ataque (**Relação estabelecida**)
 - Jogador ataca em um combate por meio da máxima quantidade possivel de exércitos disponíveis (**Relação estabelecida**)
 - Jogador alvo defende em um combate por meio da máxima quantidade possivel de exércitos disponiveis no território defendido (**Relação estabelecida**)
-
+- 
 ## Pós condições:
 - Foi criada uma instância comb de Combate (**Criação de instância**)
 - comb foi associada a instância Jogador atacante
 - comb foi associada a instância de Jogador defensor
 - foi criada uma instância diceCon de DiceConfront (**Criação de instância**)
-- diceCon foi associada a comb
-- foi criada uma instancia de AttackDice attDice a partir de comb.númeroDeExércitosAtacantes
-- foi criada uma  instância de DefenseDice defDice a partir de comb.númeroDeExércitosDefensores
-- attDice foi associado a defDice (Relação estabelecida)
-- diceCon.wins tornou-se attDice.wins
-- diceCon.loss tornou-se defDice.loss
-- diceCon foi associado a target
-- diceCon foi associado a source
-- target.armyQuantity tornou-se target.armyQuantity - diceCon.wins
-- source.armyQuantity tornou-se source.armyQuantity - diceCon.losses
-- target teve associação com targetArmy excluída
-- Foi criada a(s) instância(s) targetArmy a partir de diceCon.losses 
-- target foi associado a targetArmy
-- source teve associação com sourceArmy excluída
-- Foi cirada a(s) instância(s) sourceArmy a partir de diceCon.wins
--  source foi associado a sourceArmy
+- diceCon foi associada a comb (**Relação estabelecida**)
+- foi criada uma instancia de AttackDice attDice a partir de comb.númeroDeExércitosAtacantes (**Criação de instância**)
+- foi criada uma  instância de DefenseDice defDice a partir de comb.númeroDeExércitosDefensores (**Criação de instância**)
+- attDice foi associado a defDice (**Relação estabelecida**)
+- diceCon.wins tornou-se attDice.wins (**Modificação de atributo**)
+- diceCon.loss tornou-se defDice.loss (**Modificação de atributo**)
+- diceCon foi associado a target (**Relação estabelecida**)
+- diceCon foi associado a source (**Relação estabelecida**)
+- target.armyQuantity tornou-se target.armyQuantity - diceCon.wins (**Modificação de atributo**)
+- source.armyQuantity tornou-se source.armyQuantity - diceCon.losses (**Modificação de atributo**)
+- target teve associação com targetArmy excluída (**Relação excluída**)
+- Foi criada a(s) instância(s) targetArmy a partir de diceCon.losses (**Criação de instância**)
+- target foi associado a targetArmy (**Relação estabelecida**)
+- source teve associação com sourceArmy excluída (**Relação excluída**)
+- Foi cirada a(s) instância(s) sourceArmy a partir de diceCon.wins (**Criação de instância**)
+- source foi associado a sourceArmy (**Relação estabelecida**)
