@@ -33,3 +33,8 @@ Caso de Uso: Atacar Território
 - target.armyQuantity teve seu valor alterado a partir de diceCon.wins (**Modificação de atributo**)
 - source.armyQuantity teve seu valor alterado a partir de diceCon.losses (**Modificação de atributo**)
 
+## Projeto de Objetos:
+
+| ![Projeto de Objetos](collaboration-diagram.png) | 
+|:--:| 
+| *Projeto de Objetos da pré e pós condição* |
