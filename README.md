@@ -16,6 +16,8 @@ Caso de Uso: Atacar Território
 - Existe uma instância target de Territory (**Criação de instância**)
 - target está associado a jogador2 (**Relação estabelecida**)
 - source.armyQuantity é maior que 2 (**Modificação de atributo**)
+- source está associado a reg (**Relação estabelecida**)
+- target está associado a reg (**Relação estabelecida**)
 ## Pós condições:
 - Foi criada uma instância attackPhase de TerritoryConfrontPhase (**Criação de instância**)
 - attackPhase foi associada a warGame (**Relação Estabelecida**)
