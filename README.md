@@ -37,6 +37,13 @@ Caso de Uso: Atacar Território
 
 ## Projeto de Objetos:
 
+| ![Projeto de Objetos](object-project.png) | 
+|:--:| 
+| *Projeto de Objetos da pré e pós condição* |
+
+## Diagrama de Colaboração:
+
 | ![Projeto de Objetos](collaboration-diagram.png) | 
 |:--:| 
 | *Projeto de Objetos da pré e pós condição* |
+
