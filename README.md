@@ -21,17 +21,19 @@ Caso de Uso: Atacar Território
 ## Pós condições:
 - Foi criada uma instância attackPhase de TerritoryConfrontPhase (**Criação de instância**)
 - attackPhase foi associada a warGame (**Relação Estabelecida**)
-- attackPhase foi associada a player1 (**Relação Estabelecida**)
-- attackPhase foi associada a player2 (**Relação Estabelecida**)
-- attackPhase.sourceArmyNumber tornou-se maxArmyNumber a partir do valor de source.armyQuantity (**Modificação de atributo**)
-- attackPhase.targetArmyNumber tornou-se maxArmyNumber a partir do valor target.armyQuantity (**Modificação de atributo**)
+- attackPhase foi associada a target (**Relação Estabelecida**)
+- attackPhase foi associada a source (**Relação Estabelecida**)
+- attackPhase.sourceArmy tornou-se maxArmyNumber a partir do valor de source.armyQuantity (**Modificação de atributo**)
+- attackPhase.targetArmy tornou-se maxArmyNumber a partir do valor target.armyQuantity (**Modificação de atributo**)
 - Foi criada uma instância diceCon de DiceConfront (**Criação de instância**)
 - diceCon foi associado a attackPhase(**Relação Estabelecida**)
 - Foi criada uma instância dice de Dice(**Criação de instância**)
-- diceCon.wins teve seu valor alterado a partir de dice.faceNumber (**Modificação de atributo**)
-- diceCon.losses teve seu valor alterado a partir de dice.faceNumber 
-- target.armyQuantity teve seu valor alterado a partir de diceCon.wins (**Modificação de atributo**)
-- source.armyQuantity teve seu valor alterado a partir de diceCon.losses (**Modificação de atributo**)
+- diceCon.wins teve seu valor alterado a partir de dice.sourceValues e dice.targetValues (**Modificação de atributo**)
+- diceCon.losses teve seu valor alterado a partir de dice.sourceValues e dice.targetValues (**Modificação de atributo**)
+- attackPhase.sourceArmy tornou-se attackPhase.sourceArmy - diceCon.losses (**Modificação de atributo**)
+- attackPhase.targetArmy tornou-se attackPhase.targetArmy - diceCon.wins (**Modificação de atributo**)
+- target.armyQuantity teve seu valor alterado a partir de attackPhase.targetArmy (**Modificação de atributo**)
+- source.armyQuantity teve seu valor alterado a partir de attackPhase.sourceArmy (**Modificação de atributo**)
 
 ## Projeto de Objetos:
 
