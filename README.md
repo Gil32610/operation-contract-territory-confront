@@ -1,7 +1,7 @@
 # Contrato de operação: attackTerritory
 
 ## Operação: 
-`attackTerritory(source: Territory, target: Territory)`
+`attackTerritory(sourceArmy: int, targetArmy: int)`
 ## Referências cruzadas
 Caso de Uso: Atacar Território
 ## Pré condições:
